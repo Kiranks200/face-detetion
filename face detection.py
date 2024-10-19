@@ -31,7 +31,6 @@ while 1:
         #To draw a rectangle in eyes
         for (ex,ey,ew,eh) in eyes:
             cv2.rectangle(roi_color,(ex,ey),(ex+ew,ey+eh),(0,127,255),2)
-
     
     cv2.imshow('img',img) 
 
@@ -40,7 +39,5 @@ while 1:
     if k == 27:
         break
 
-
 cap.release()
-
 cv2.destroyAllWindows() 
